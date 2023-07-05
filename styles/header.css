@@ -24,15 +24,19 @@
     padding: 1em;
 }
 
+.container__botao{
+    display: none;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
 .lista-menu{
     display: none;
     position: absolute;
     top: 100%;
     width: 60vw;
-}
-
-.container__botao:checked~.lista-menu{
-    display: block;
 }
 
 .lista-menu__titulo,
@@ -43,6 +47,7 @@
 
 .lista-menu__titulo{
     color: var(--cor-menu-titulo);
+    font-weight: 700;
 }
 
 .lista-menu__link{

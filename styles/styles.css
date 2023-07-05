@@ -1,12 +1,16 @@
-@import url("styles/header.css");
+@import url("header.css");
 
 :root{
     --cor-fundo: #EBECEE;
     --cor-cabecalho: white;
     --cor-menu-titulo: #eb9b00;
     --cor-menu-link-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
 }
 
 body{
     background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
