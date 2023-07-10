@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
@@ -34,10 +35,50 @@
             </div>
         </header>   
         <main>
+            <section class="banner">
+                <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+                <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvlvimento!</p>
+                <input type="search" class="banner__pesquisa" placeholder="Qual sua próxima leitura?">
+            </section>
+            <section class="carrossel">
+                <h2 class="carrossel__titulo">Novos lançamentos</h2>
 
+                <!--https://swiperjs.com/get-started#use-swiper-from-cdn
+                Para montar o carrossel com Swiper JS
+                CDN é uma rede de distribuição de arquivos
+                CDN: https://pt.wikipedia.org/wiki/Rede_de_fornecimento_de_conte%C3%BAdo-->
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka da Alura Books"></div>
+                      <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança em Design da Alura Books"></div>
+                      <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript acertivo da Alura Books"></div>
+                      <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol da Alura Books"></div>
+                      <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Livro sobre Node JS da Alura Books"></div>
+                      <div class="swiper-slide"><img src="img/UX.svg" alt="Livro sobre UX da Alura Books"></div>
+                    </div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </section>
         </main>
         <footer>
 
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                    spaceBetween: 10,
+                    slidesPerView: 3,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                    }
+                }
+            );
+        </script>
     </body>
 </html>
