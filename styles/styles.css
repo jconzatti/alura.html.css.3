@@ -3,12 +3,17 @@
 @import url("carrossel.css");
 @import url("card.css");
 @import url("topico.css");
+@import url("contato.css");
+@import url("rodape.css");
 
 :root{
     --cor-fundo-principal: #EBECEE;
     --cor-fundo-secundario: white;
+    --cor-fundo-terciario: #f9f9f9;
+    --cor-fundo-quartenario: #858585;
     --cor-titulo-secundario: #eb9b00;
     --cor-titulo-terciario: #002F52;
+    --cor-titulo-quartenario: black;
     --cor-texto: rgba(0, 0, 0, 0.85);
     --cor-menu-link-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --cor-banner-gradiente: linear-gradient(160deg, #002F52 0%, #326589 100%);
