@@ -33,7 +33,6 @@
     background: url("../img/Pesquisa.svg") no-repeat;
 }
 
-
 @media screen and (min-width: 1024px) {
     .banner{
         padding: 4em 2em;
