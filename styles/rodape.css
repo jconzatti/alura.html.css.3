@@ -13,3 +13,39 @@ hr{
 .rodape__titulo{
     padding: 1.5em;
 }
+
+.rodape__lista{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 0 4em 0;
+    }
+    .rodape__titulo{
+        padding: 0.75em 0;
+        font-size: 24px;
+    }
+    .rodape__lista{
+        display: inline-block;
+    }
+    .rodape__lista__item{
+        display: flex;
+        align-items: center;
+        gap: 0.625em;
+        margin-bottom: 1em;
+    }
+    .rodape__lista__item__texto{
+        color: var(--cor-texto-secundario);
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .rodape__lista__titulo{
+        color: var(--cor-fundo-quartenario);
+        padding: 1.5em 0;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
