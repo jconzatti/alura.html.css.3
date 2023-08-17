@@ -24,14 +24,6 @@
     padding: 1em;
 }
 
-.container__titulo{
-    display: none;
-}
-
-.container__botao{
-    display: none;
-}
-
 .container__botao:checked~.lista-menu{
     display: block;
 }
@@ -62,7 +54,7 @@
     text-transform: uppercase;
 }
 
-.cabecalho__opcao{
+.cabecalho__opcao, .container__texto, .container__titulo, .container__botao{
     display: none;
 }
 
@@ -104,5 +96,25 @@
     }
     .cabecalho__opcao__botao{
         display: none;
+    }
+}
+
+
+@media screen and (min-width: 1728px) {
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor-titulo-quartenario);
+    }
+    .cabecalho{
+        padding: 0 2em;
+    }
+    .cabecalho__opcao{
+        margin-right: auto;
+        margin-left: 2em;
+    }
+    .container__texto{
+        display: block;
     }
 }
