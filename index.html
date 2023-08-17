@@ -69,86 +69,90 @@
             </section>
             <section class="carrossel">
                 <h2 class="carrossel__titulo">Novos lançamentos</h2>
+                
+                <div class="carrossel-card__container">
+                    <!--https://swiperjs.com/get-started#use-swiper-from-cdn
+                    Para montar o carrossel com Swiper JS
+                    CDN é uma rede de distribuição de arquivos
+                    CDN: https://pt.wikipedia.org/wiki/Rede_de_fornecimento_de_conte%C3%BAdo-->
+                    <div class="swiper">
+                        <div class="swiper-pagination"></div>
 
-                <!--https://swiperjs.com/get-started#use-swiper-from-cdn
-                Para montar o carrossel com Swiper JS
-                CDN é uma rede de distribuição de arquivos
-                CDN: https://pt.wikipedia.org/wiki/Rede_de_fornecimento_de_conte%C3%BAdo-->
-                <div class="swiper">
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança em Design da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript acertivo da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Livro sobre Node JS da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/UX.svg" alt="Livro sobre UX da Alura Books"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança em Design da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript acertivo da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Livro sobre Node JS da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/UX.svg" alt="Livro sobre UX da Alura Books"></div>
+                        </div>
+                    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                  
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </section>
-            <section class="card">
-                <div class="card__descricao">
-                    <div class="card__descricao__item">
-                        <h3 class="card__descricao__item__titulo">Talvez você também se interesse por...</h3>    
-                        <h2 class="card__descricao__item__titulo--livro">Angular 11 e Firebase</h2>
-                        <p class="card__descricao__item__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    <div class="card">
+                        <div class="card__descricao">
+                            <div class="card__descricao__item">
+                                <h3 class="card__descricao__item__titulo">Talvez você também se interesse por...</h3>    
+                                <h2 class="card__descricao__item__titulo--livro">Angular 11 e Firebase</h2>
+                                <p class="card__descricao__item__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                            </div>
+                            <img class="card__descricao__imagem" src="img/Angular.svg" alt="Icone do Angular">
+                        </div>
+                        <div class="card__botao">
+                            <ul class="card__botao__lista">
+                                <li class="card__botao__lista__item">
+                                    <img src="img/Favoritos.svg" alt="Favoritar livro">
+                                </li>
+                                <li class="card__botao__lista__item">
+                                    <img src="img/Sacola.svg" alt="Adicionar livro na sacola">
+                                </li>
+                            </ul>
+                            <a class="card__botao__ancora" href="#">Saiba mais</a>
+                        </div>
                     </div>
-                    <img class="card__descricao__imagem" src="img/Angular.svg" alt="Icone do Angular">
-                </div>
-                <div class="card__botao">
-                    <ul class="card__botao__lista">
-                        <li class="card__botao__lista__item">
-                            <img src="img/Favoritos.svg" alt="Favoritar livro">
-                        </li>
-                        <li class="card__botao__lista__item">
-                            <img src="img/Sacola.svg" alt="Adicionar livro na sacola">
-                        </li>
-                    </ul>
-                    <a class="card__botao__ancora" href="#">Saiba mais</a>
                 </div>
             </section>
             <section class="carrossel">
                 <h2 class="carrossel__titulo">Mais vendidos</h2>
-                <div class="swiper">
-                    <div class="swiper-pagination"></div>
+                <div class="carrossel-card__container">
+                    <div class="swiper">
+                        <div class="swiper-pagination"></div>
 
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/Arquitetura.svg" alt="Livro sobre Arquitetura da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/Gestão.svg" alt="Livro sobre Gestão da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livro sobre Gestão da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/UX.svg" alt="Livro sobre UX da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="Livro sobre Métricas ágeis da Alura Books"></div>
-                        <div class="swiper-slide"><img src="img/Tuning.svg" alt="Livro sobre Turing da Alura Books"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/Arquitetura.svg" alt="Livro sobre Arquitetura da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/Gestão.svg" alt="Livro sobre Gestão da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livro sobre Gestão da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/UX.svg" alt="Livro sobre UX da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="Livro sobre Métricas ágeis da Alura Books"></div>
+                            <div class="swiper-slide"><img src="img/Tuning.svg" alt="Livro sobre Turing da Alura Books"></div>
+                        </div>
+                    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                  
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </section>
-            <section class="card">
-                <div class="card__descricao">
-                    <div class="card__descricao__item">
-                        <img src="img/Estrelinhas.svg" alt="Avaliação cinco estrelas">
-                        <h3 class="card__descricao__item__titulo">Autora do Mês</h3>    
-                        <h2 class="card__descricao__item__titulo--livro">Juliana Agarikov</h2>
-                        <p class="card__descricao__item__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    <div class="card">
+                        <div class="card__descricao">
+                            <div class="card__descricao__item">
+                                <img src="img/Estrelinhas.svg" alt="Avaliação cinco estrelas">
+                                <h3 class="card__descricao__item__titulo">Autora do Mês</h3>    
+                                <h2 class="card__descricao__item__titulo--livro">Juliana Agarikov</h2>
+                                <p class="card__descricao__item__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                            </div>
+                            <img class="card__descricao__imagem" src="img/Perfil-escritora 1.svg" alt="Icone do Angular">
+                        </div>
+                        <div class="card__botao">
+                            <ul class="card__botao__lista">
+                                <li class="card__botao__lista__item">
+                                    <img src="img/Favoritos.svg" alt="Favoritar livro">
+                                </li>
+                                <li class="card__botao__lista__item">
+                                    <img src="img/Sacola.svg" alt="Adicionar livro na sacola">
+                                </li>
+                            </ul>
+                            <a class="card__botao__ancora" href="#">Saiba mais</a>
+                        </div>
                     </div>
-                    <img class="card__descricao__imagem" src="img/Perfil-escritora 1.svg" alt="Icone do Angular">
-                </div>
-                <div class="card__botao">
-                    <ul class="card__botao__lista">
-                        <li class="card__botao__lista__item">
-                            <img src="img/Favoritos.svg" alt="Favoritar livro">
-                        </li>
-                        <li class="card__botao__lista__item">
-                            <img src="img/Sacola.svg" alt="Adicionar livro na sacola">
-                        </li>
-                    </ul>
-                    <a class="card__botao__ancora" href="#">Saiba mais</a>
                 </div>
             </section>
             <section class="topico">
