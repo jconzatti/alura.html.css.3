@@ -30,6 +30,11 @@
     text-decoration: none;
 }
 
+.topico__lista__item__link:hover{
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-titulo-secundario);
+}
+
 @media screen and (min-width: 1024px) {
     .topico{
         padding: 2.5em 4.5em 1.5em 4.5em;

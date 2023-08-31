@@ -6,12 +6,37 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.card:hover{
+    background-color: var(--cor-titulo-secundario);
+}
+
+.card:hover>.card__descricao>.card__descricao__item>.card__descricao__item__titulo{
+    color: var(--cor-fundo-secundario);
+}
+
+.card:hover>.card__descricao>.card__descricao__item>.card__descricao__item__imagem--estrela{
+    display: none;
+}
+
+.card:hover>.card__descricao>.card__descricao__item>.card__descricao__item__imagem--estrela--branco{
+    display: inline-block;
+}
+
+.card:hover>.card__botao>.card__botao__ancora{
+    background-color: var(--cor-fundo-secundario);
+    color: var(--cor-titulo-secundario);
+}
+
 .card__descricao{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 0.5em;
     line-height: normal;
+}
+
+.card__descricao__item__imagem--estrela--branco{
+    display: none;
 }
 
 .card__descricao__item__titulo{

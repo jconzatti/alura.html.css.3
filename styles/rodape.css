@@ -42,6 +42,9 @@ hr{
         text-decoration: none;
         font-size: 14px;
     }
+    .rodape__lista__item__texto:hover{
+        color: var(--cor-titulo-secundario);
+    }
     .rodape__lista__titulo{
         color: var(--cor-fundo-quartenario);
         padding: 1.5em 0;
